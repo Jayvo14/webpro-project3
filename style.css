@@ -19,15 +19,15 @@ body{
 
 /* all of the gameBoard table stylings */
 table {
-    background-color: rgb(81, 115, 103);
+    background-color: white;
 }
 tr{
     background-color: rgb(255, 255, 255);
 }
 td {
     border: 0px solid rgb(162, 36, 36);
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 
 /* styling for dead or active cell */

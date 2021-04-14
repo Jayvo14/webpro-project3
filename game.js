@@ -8,7 +8,7 @@ function createBoard(){
     table.setAttribute('id', 'gameGrid');
 
     // now make each row and column based on a variable
-    var size = 30;
+    var size = 50;
     for( let i = 0; i < size; i++ ){
 
         var row = document.createElement('tr');
