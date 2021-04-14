@@ -1,25 +1,45 @@
+/* general styling for the body */
 body{
     text-align: center;
     font-size: xx-large;
     background-color: #cea56f;
 }
 
-#table{
-    text-align: center;
+
+/* styling for the gameBoard and gameGrid */
+#gameBoard{
+    padding: 10px;
+
 }
 
-#main-table{
-    display: none;
+#gameGrid{
+    margin: 0 auto;
 }
 
-table, td, th {
-    border: 1px groove black;
+
+/* all of the gameBoard table stylings */
+table {
+    background-color: rgb(81, 115, 103);
 }
-table{
-    border-collapse: collapse;
-    width: 66%;
+tr{
+    background-color: rgb(255, 255, 255);
+}
+td {
+    border: 0px solid rgb(162, 36, 36);
+    width: 20px;
+    height: 20px;
 }
 
+/* styling for dead or active cell */
+td.inactive{
+    background-color: white;
+}
+td.active{
+    background-color: black;
+}
+
+
+/* Does the button styling for the site */
 .button {
     background-color: #875b76; 
     border-radius: 4px;
@@ -43,6 +63,8 @@ table{
       color: white;
 }
 
+
+/* Does the validation styling for the site */
 #w3c{
     position: fixed;
     bottom: 0;
