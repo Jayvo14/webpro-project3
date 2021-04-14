@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    font-size: xx-large;
+    background-color: #cea56f;
+}
+
+#table{
+    text-align: center;
+}
+
+#main-table{
+    display: none;
+}
+
+table, td, th {
+    border: 1px groove black;
+}
+table{
+    border-collapse: collapse;
+    width: 66%;
+}
+
+.button {
+    background-color: #875b76; 
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #44333e;
+    color: white;
+}
+  
+.button a{
+      text-decoration: none;
+      color: white;
+}
+
+#w3c{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
