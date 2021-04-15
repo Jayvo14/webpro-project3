@@ -9,24 +9,24 @@
 
     <title>Conway's Game of Life</title>
 </head>
-<body onload="createBoard()">
+<body onload="setupGame()">
 
     <h2>Conway's Game of Life</h2>
     
     <div id="buttonRow">
-        <button class="button">
+        <button class="button" onclick="startLoop()">
             Start
         </button>
-        <button class="button">
+        <button class="button" onclick="endLoop()">
             Stop
         </button>
-        <button class="button">
+        <button class="button" onclick="increment()">
             Increment 1 generation
         </button>
-        <button class="button">
+        <button class="button" onclick="twenty_three_increments(0)">
             Increment 23 generations
         </button>
-        <button class="button">
+        <button class="button" onclick="reset()">
             Reset
         </button>
         <button class="button">
@@ -37,6 +37,7 @@
         </button>
     </div>
 
+    <h4 id="generation"> generation </h4>
     <div id="gameBoard">
     
           
@@ -45,8 +46,13 @@
 
     <div> <!--Validation footer-->
         <div id="w3c"><br>
-            <a href="https://html5.validator.nu/?doc=https%3A%2F%2Fcodd.cs.gsu.edu%2F%7Eamustafa3%2Fhw%2Fhw4%2Findex.html" target="_blank"><img src="resources/w3-html.png" alt="Valid HTML"/></a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodd.cs.gsu.edu%2F%7Eamustafa3%2Fhw%2Fhw4%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank"><img src="resources/w3-css.png" alt="Valid CSS"/></a>
+            <a href="https://google.com" target="_blank"><img src="resources/w3-html.png" alt="Valid HTML"/></a>
+            <a href="https://google.com" target="_blank"><img src="resources/w3-css.png" alt="Valid CSS"/></a>
+            
+            <!-- links for later, these arent the validation for this site
+                html - https://html5.validator.nu/?doc=https%3A%2F%2Fcodd.cs.gsu.edu%2F%7Eamustafa3%2Fhw%2Fhw4%2Findex.html
+                css - https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcodd.cs.gsu.edu%2F%7Eamustafa3%2Fhw%2Fhw4%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en 
+            -->
         </div>
     </div>
 

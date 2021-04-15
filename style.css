@@ -20,6 +20,7 @@ body{
 /* all of the gameBoard table stylings */
 table {
     background-color: white;
+    border-spacing: inherit;
 }
 tr{
     background-color: rgb(255, 255, 255);
@@ -38,6 +39,12 @@ td.active{
     background-color: black;
 }
 
+/* does the styling for the generation text block */
+#generation{
+    padding-top: 2%;
+    margin: 0 5px;
+}
+
 
 /* Does the button styling for the site */
 .button {
@@ -46,6 +53,7 @@ td.active{
     border: none;
     color: white;
     padding: 15px 32px;
+    margin: 2px 3px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
