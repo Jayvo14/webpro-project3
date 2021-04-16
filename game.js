@@ -3,8 +3,7 @@
 const size = 50;
 let currBoard = [size], nextBoard = [size];
 let gameStarted = false;
-let timer, generationSpeed = 1000;
-let generation = 1;
+let timer, generationSpeed = 500, generation = 1;
 
 // function that sets up the board
 function setupGame(){
@@ -35,7 +34,8 @@ function createBoard(){
             cell.setAttribute('class', 'inactive');
 
             // add function to be called if you click on a cell
-            cell.addEventListener('click', clickedCell);
+            cell.addEventListener('dragenter', clickedCell );
+            cell.addEventListener('click', clickedCell );
 
             row.append(cell);
         }
@@ -62,6 +62,7 @@ function clickedCell(){
         this.setAttribute('class', 'inactive');
         currBoard[i][j] = 0;
     }
+
 
 }
 
@@ -235,7 +236,7 @@ function twenty_three_increments(p){
 function loop(){
 
     increment();
-    if( started ){
+    if( gameStarted ){
         timer = setTimeout( loop, generationSpeed );
     }
 
@@ -244,15 +245,15 @@ function loop(){
 // function to start gerneration loop
 function startLoop(){
 
-    started = true;
+    gameStarted = true;
     loop();
 }
 
 // function to end gerneration loop
 function endLoop(){
 
-    if( started ){
-        started = false;
+    if( gameStarted ){
+        gameStarted = false;
         clearTimeout(timer);
     }
 }

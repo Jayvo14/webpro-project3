@@ -26,17 +26,19 @@ tr{
     background-color: rgb(255, 255, 255);
 }
 td {
-    border: 0px solid rgb(162, 36, 36);
-    width: 10px;
-    height: 10px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border: none;
+    width: 12px;
+    height: 12px;
+    cursor: crosshair;
 }
 
 /* styling for dead or active cell */
 td.inactive{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 td.active{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 /* does the styling for the generation text block */
@@ -48,7 +50,7 @@ td.active{
 
 /* Does the button styling for the site */
 .button {
-    background-color: #875b76; 
+    background-color: #2b2626; 
     border-radius: 4px;
     border: none;
     color: white;
@@ -62,7 +64,7 @@ td.active{
 }
 
 .button:hover {
-    background-color: #44333e;
+    background-color: #433443;
     color: white;
 }
   
