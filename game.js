@@ -12,6 +12,7 @@ function setupGame(){
     changeGeneration(generation++);
 }
 
+
 // we need to create the table onload
 function createBoard(){
 
@@ -45,6 +46,7 @@ function createBoard(){
 
 }
 
+
 // switch cell from on too off or vice versa, when we click on it
 function clickedCell(){
 
@@ -66,6 +68,7 @@ function clickedCell(){
 
 }
 
+
 // function to create the arrays to store the values of the cells
 function createBoardArrays(){
 
@@ -79,6 +82,7 @@ function createBoardArrays(){
     resetArray();
 }
 
+
 // sets all the values in the board to zero
 function resetArray(){
     
@@ -89,6 +93,7 @@ function resetArray(){
         }
     }
 }
+
 
 // resets all the values
 function reset(){
@@ -110,6 +115,7 @@ function reset(){
     // reset all the values in the arrays
     resetArray();
 }
+
 
 // this will incrememnt by one generation
 function increment(){
@@ -153,6 +159,7 @@ function increment(){
     updateBoard();
     
 }
+
 
 // this function returns how many neighbors a cell has
 function getNeighbors( i, j ){
@@ -201,6 +208,7 @@ function getNeighbors( i, j ){
     return count;
 }
 
+
 // updates the board according to current board.
 function updateBoard(){
 
@@ -219,8 +227,9 @@ function updateBoard(){
     }
 }
 
+
 // function that increments 23 times
-function twenty_three_increments(p){
+function twenty_three_increments( p ){
 
     started = true;
     setTimeout( function(){
@@ -232,6 +241,7 @@ function twenty_three_increments(p){
 
 }
 
+
 // function that loops every 1 sec to update to new generation
 function loop(){
 
@@ -242,12 +252,14 @@ function loop(){
 
 }
 
+
 // function to start gerneration loop
 function startLoop(){
 
     gameStarted = true;
     loop();
 }
+
 
 // function to end gerneration loop
 function endLoop(){
@@ -257,6 +269,7 @@ function endLoop(){
         clearTimeout(timer);
     }
 }
+
 
 // change the generation text
 function changeGeneration( current ){
