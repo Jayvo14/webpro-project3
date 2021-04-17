@@ -13,35 +13,47 @@
 
     <h2>Conway's Game of Life</h2>
     
-    <div id="buttonRow">
-        <button class="button" onclick="startLoop()">
-            Start
-        </button>
-        <button class="button" onclick="endLoop()">
-            Stop
-        </button>
-        <button class="button" onclick="increment()">
-            Increment 1 generation
-        </button>
-        <button class="button" onclick="twenty_three_increments(0)">
-            Increment 23 generations
-        </button>
-        <button class="button" onclick="reset()">
-            Reset
-        </button>
-        <button class="button">
-            Pattern
-        </button>
-        <button class="button">
-            Login
-        </button>
-    </div>
+    <div id="buttonsAndGame">
 
-    <h4 id="generation"> generation </h4>
-    <div id="gameBoard">
+        <div id="buttonRow">
+
+            <h4 id="generation"> generation </h4><br>
+
+            <div id="left-col">
+                <button class="button" onclick="startLoop()">
+                    Start
+                </button>
+                <button class="button" onclick="endLoop()">
+                    Stop
+                </button>
+                <button class="button" onclick="reset()">
+                    Reset
+                </button>
+            </div><br>
+            <div id="right-col">
+                <button class="button" onclick="increment()">
+                    Increment 1 generation
+                </button>
+                <button class="button" onclick="twenty_three_increments(0)">
+                    Increment 23 generations
+                </button>
+                <button class="button">
+                    Patterns
+                </button>
+            </div>
+            
+            <!--
+                <button class="button">
+                    Login
+                </button>
+            -->
+        </div>
     
-          
-    </div><br>
+        <div id="gameDiv">
+            <div id="gameBoard"> </div><br>
+        </div>
+
+    </div>
     
 
     <div> <!--Validation footer-->

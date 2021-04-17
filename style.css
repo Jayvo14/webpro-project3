@@ -28,8 +28,8 @@ tr{
 td {
     /* border: 1px solid rgb(0, 0, 0); */
     border: none;
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     cursor: crosshair;
 }
 
@@ -41,10 +41,33 @@ td.active{
     background-color: rgb(0, 0, 0);
 }
 
-/* does the styling for the generation text block */
+/* does the styling for the button and game container and the generation text block */
+#buttonsAndGame{
+    display: inline-flex;
+}
+
+#buttonRow{
+    margin: auto 0;   
+}
+
+#gameDiv{
+    width: 75%;
+}
+
 #generation{
-    padding-top: 2%;
+    padding-top: 1%;
     margin: 0 5px;
+}
+
+
+/* does the styling for the row of buttons */
+
+#left-col{
+    display: grid;
+}
+
+#right-col{
+    display: grid;
 }
 
 

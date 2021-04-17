@@ -1,9 +1,9 @@
 
 // constant values 
-const size = 50;
+const size = 75;
 let currBoard = [size], nextBoard = [size];
 let gameStarted = false;
-let timer, generationSpeed = 500, generation = 0;
+let timer, generationSpeed = 400, generation = 0;
 
 // function that sets up the board
 function setupGame(){
