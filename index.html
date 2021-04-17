@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="game.js"></script>
-
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">  
     <title>Conway's Game of Life</title>
 </head>
 <body onload="setupGame()">
 
-    <h2>Conway's Game of Life</h2>
+    <div id="title">
+        <h2>Conway's Game of Life</h2>
+    </div>
     
     <div id="buttonsAndGame">
 
         <div id="buttonRow">
+
+            <img src="resources/circle.gif" alt="computer" id="gif">
 
             <h4 id="generation"> generation </h4><br>
 
@@ -50,11 +54,16 @@
         </div>
     
         <div id="gameDiv">
-            <div id="gameBoard"> </div><br>
+            <div id="gameBoard"> </div>
         </div>
 
     </div>
     
+    <div class="audio">
+        <audio controls autoplay loop >
+            <source src="resources/theme.mp3" type="audio/mp3">
+        </audio>
+    </div>
 
     <div> <!--Validation footer-->
         <div id="w3c"><br>

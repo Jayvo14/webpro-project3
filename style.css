@@ -2,14 +2,18 @@
 body{
     text-align: center;
     font-size: xx-large;
-    background-color: #cea56f;
+    background-color: #000000;
+    color: #ffffff;
 }
 
+#title{
+    display: block;
+}
 
 /* styling for the gameBoard and gameGrid */
 #gameBoard{
-    padding: 10px;
-
+    padding: 1px;
+    background-color: #ffffff;
 }
 
 #gameGrid{
@@ -23,7 +27,7 @@ table {
     border-spacing: inherit;
 }
 tr{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 td {
     /* border: 1px solid rgb(0, 0, 0); */
@@ -35,10 +39,10 @@ td {
 
 /* styling for dead or active cell */
 td.inactive{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 td.active{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 /* does the styling for the button and game container and the generation text block */
@@ -48,6 +52,7 @@ td.active{
 
 #buttonRow{
     margin: auto 0;   
+    padding-right: 10px;
 }
 
 #gameDiv{
@@ -102,4 +107,14 @@ td.active{
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+/* does the styling for the gifs*/
+#gif{
+    max-width: 300px;
+    height: 300px;
+}
+
+.audio{
+    display: none;
 }
