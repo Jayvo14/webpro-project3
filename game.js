@@ -3,7 +3,7 @@
 const size = 50;
 let currBoard = [size], nextBoard = [size];
 let gameStarted = false;
-let timer, generationSpeed = 500, generation = 1;
+let timer, generationSpeed = 500, generation = 0;
 
 // function that sets up the board
 function setupGame(){
@@ -109,7 +109,7 @@ function reset(){
         }
     }
 
-    generation = 1;
+    generation = 0;
     changeGeneration(generation);
 
     // reset all the values in the arrays
