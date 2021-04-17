@@ -69,6 +69,13 @@
         ?>
     </div>
     
+    <div> <!--Validation footer-->
+      <div id="w3c"><br><br>
+          <a href="https://google.com" target="_blank"><img src="resources/w3-html.png" alt="Valid HTML"/></a>
+          <a href="https://google.com" target="_blank"><img src="resources/w3-css.png" alt="Valid CSS"/></a>
+      </div>
+    </div>
+
 
   </body>
 </html>
