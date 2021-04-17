@@ -116,6 +116,6 @@ td.active{
 }
 
 .audio{
-    display: block;
+    opacity: .06;
     background-color: #000000;
 }
