@@ -1,0 +1,45 @@
+.body {
+  margin-top: 20%;
+  background-color: rgb(21, 21, 21);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke
+}
+.main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttons {
+  background-color: rgb(66, 68, 69);
+  color: white;
+  border: 2px solid #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  border-radius: 5%;
+  width: 70px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  background-color: rgb(66, 68, 69);
+}
+a:visited {
+  background-color: rgb(66, 68, 69);
+}
+a:hover {
+  background-color: rgb(89, 89, 89);
+}
+a:active {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login!</title>
+    <link rel="shortcut icon" href="favi/lock.png" type="image/x-icon" />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body class="body">
+    <div class="navbar">
+      <div style="margin-left: 1%; float: left">
+        <a class="buttons" href="home.html">Home</a>
+      </div>
+      <div style="width: 90%; margin-right: 7%; text-align: center">
+        <h1>Log In!</h1>
+      </div>
+    </div>
+    <div class="main">
+      <div style="display: flex; justify-content: center">
+        <form action="login-submit.php" method="GET">
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <br><br>
+            <div style="display: flex; flex-direction: row; justify-content: center">
+              <div class="fitb-section">
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" value="" maxlength="16" /><br />
+              </div>
+              <div class="fitb-section">
+                <label for="cemail">Password:</label>
+                <input type="password" id="pword" name="pword" value="" maxlength="40" /><br />
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <div style="display: flex; justify-content: center;">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
