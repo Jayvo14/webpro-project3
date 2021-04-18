@@ -116,10 +116,11 @@ td.active{
 }
 
 .audio{
-    opacity: .06;
+    opacity: .3;
     background-color: #000000;
     position: fixed;
     bottom: 0;
+    left: 0;
 }
 
 .main{
