@@ -276,3 +276,11 @@ function changeGeneration( current ){
     var text = document.getElementById('generation');
     text.innerHTML = 'Generation ' + current;
 }
+
+function pattern1(){
+    resetArray();
+    for(int i =37;i<40;i++){
+        for(int j =37;j<40;j++)
+            nextBoard[i][j]=1;
+    }
+}
