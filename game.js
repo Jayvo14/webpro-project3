@@ -276,3 +276,184 @@ function changeGeneration( current ){
     var text = document.getElementById('generation');
     text.innerHTML = 'Generation ' + current;
 }
+
+function block(){
+    reset();
+    resetArray();
+    currBoard[37][37]=1;
+    currBoard[37][38]=1;
+    currBoard[38][37]=1;
+    currBoard[38][38]=1;
+    updateBoard();
+}
+
+
+function pulsar(){
+    reset();
+    resetArray();
+    
+    currBoard[34][38]=1;
+    currBoard[34][39]=1;
+    currBoard[35][38]=1;
+    currBoard[35][40]=1;
+    currBoard[36][40]=1;
+    currBoard[36][39]=1;
+
+    currBoard[35][42]=1;
+    currBoard[34][42]=1;
+    currBoard[34][43]=1;
+    currBoard[34][44]=1;
+
+    currBoard[32][40]=1;
+    currBoard[32][39]=1;
+    currBoard[31][40]=1;
+    currBoard[30][40]=1;
+
+    currBoard[36][35]=1;
+    currBoard[36][34]=1;
+    currBoard[35][34]=1;
+    currBoard[35][36]=1;
+    currBoard[34][36]=1;
+    currBoard[34][35]=1;
+
+    currBoard[32][35]=1;
+    currBoard[32][34]=1;
+    currBoard[31][34]=1;
+    currBoard[30][34]=1;
+
+    currBoard[35][32]=1;
+    currBoard[34][32]=1;
+    currBoard[34][31]=1;
+    currBoard[34][30]=1;
+
+    currBoard[38][35]=1;
+    currBoard[38][34]=1;
+    currBoard[39][34]=1;
+    currBoard[39][36]=1;
+    currBoard[40][36]=1;
+    currBoard[40][35]=1;
+
+    currBoard[39][38]=1;
+    currBoard[40][38]=1;
+    currBoard[40][39]=1;
+    currBoard[38][39]=1;
+    currBoard[38][40]=1;
+    currBoard[39][40]=1;
+
+    currBoard[39][42]=1;
+    currBoard[40][42]=1;
+    currBoard[40][43]=1;
+    currBoard[40][44]=1;
+
+    currBoard[42][39]=1;
+    currBoard[42][40]=1;
+    currBoard[43][40]=1;
+    currBoard[44][40]=1;
+
+    currBoard[42][35]=1;
+    currBoard[42][34]=1;
+    currBoard[43][34]=1;
+    currBoard[44][34]=1;
+
+    currBoard[39][32]=1;
+    currBoard[40][32]=1;
+    currBoard[40][31]=1;
+    currBoard[40][30]=1;
+    updateBoard();
+}
+
+function toad(){
+    reset();
+    resetArray();
+    currBoard[37][37]=1;
+    currBoard[37][38]=1;
+    currBoard[37][39]=1;
+    currBoard[38][37]=1;
+    currBoard[38][36]=1;
+    currBoard[38][38]=1;
+    updateBoard();
+
+}
+
+function glider(){
+    reset();
+    resetArray();
+    currBoard[37][37]=1;
+    currBoard[37][38]=1;
+    currBoard[37][39]=1;
+    currBoard[36][39]=1;
+    currBoard[35][38]=1;
+    updateBoard();
+}
+
+function beacon(){
+    reset();
+    resetArray();
+    //currBoard[down][left]=1;
+    currBoard[38][39]=1;
+    currBoard[39][39]=1;
+    currBoard[39][38]=1;
+    currBoard[36][37]=1;
+    currBoard[36][36]=1;
+    currBoard[37][36]=1;
+    updateBoard();
+}
+
+function spaceship(){
+    resetArray();
+    reset();
+
+    currBoard[37][37]=1;
+    currBoard[39][37]=1;
+    currBoard[40][38]=1;
+    currBoard[40][39]=1;
+    currBoard[40][40]=1;
+    currBoard[40][41]=1;
+    currBoard[39][41]=1;
+    currBoard[38][41]=1;
+    currBoard[37][40]=1;
+    updateBoard();
+}
+
+function beehive(){
+    reset();
+    resetArray();
+    currBoard[38][37]=1;
+    currBoard[38][38]=1;
+    currBoard[37][39]=1;
+    currBoard[36][38]=1;
+    currBoard[36][37]=1;
+    currBoard[37][36]=1;
+    updateBoard();
+
+}
+function blinker(){
+    reset();
+    resetArray;
+    currBoard[37][37]=1;
+    currBoard[37][38]=1;
+    currBoard[37][39]=1;
+    updateBoard();
+}
+function loaf(){
+    reset();
+    resetArray();
+    currBoard[37][36]=1;
+    currBoard[38][37]=1;
+    currBoard[39][38]=1;
+    currBoard[38][39]=1;
+    currBoard[37][39]=1;
+    currBoard[36][38]=1;
+    currBoard[36][37]=1;
+    updateBoard();
+}
+function boat(){
+    reset();
+    resetArray();
+    currBoard[36][36]=1;
+    currBoard[36][37]=1;
+    currBoard[37][38]=1;
+    currBoard[38][37]=1;
+    currBoard[37][36]=1;
+    updateBoard();
+}

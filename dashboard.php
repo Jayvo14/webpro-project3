@@ -49,7 +49,7 @@
                   <button class="button" onclick="twenty_three_increments(0)">
                       Increment 23 generations
                   </button>
-                  <button class="button">
+                  <button class="button" onclick="spaceship()">
                       Patterns
                   </button>
               </div>
