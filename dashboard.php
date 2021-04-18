@@ -9,15 +9,16 @@
       <title>Conway's Game of Life</title>
   </head>
 
+    <?php 
+        $user = $_GET["uname"]; 
+    ?>
 
     <body onload="setupGame()">
       <div class="navbar">
         <div style="margin-left: 1%; float: left">
             <a class="button" href="home.html">Logout</a>
           </div>
-          <?php 
-            $user = $_GET["uname"]; 
-          ?>
+          
       </div>
       <div id="title">
           <h2><?php echo $user; ?>'s Game of Life</h2>
@@ -27,35 +28,61 @@
 
           <div id="buttonRow">
 
-              <img src="resources/circle.gif" alt="circle" id="gif">
+            <img src="resources/circle.gif" alt="circle" id="gif">
+            <h4 id="generation">Generation 0</h4>
 
-              <h4 id="generation"> generation </h4><br>
+            <div id="left-col">
+                <button class="button" onclick="startLoop()">
+                    Start
+                </button>
+                <button class="button" onclick="endLoop()">
+                    Stop
+                </button>
+                <button class="button" onclick="reset()">
+                    Reset
+                </button>
+            </div><br> <br>
+            <div id="right-col">
+                <button class="button" onclick="increment()">
+                    Increment 1 generation
+                </button>
+                <button class="button" onclick="twenty_three_increments(0)">
+                    Increment 23 generations
+                </button>
+                <div class="dropdown">
 
-              <div id="left-col">
-                  <button class="button" onclick="startLoop()">
-                      Start
-                  </button>
-                  <button class="button" onclick="endLoop()">
-                      Stop
-                  </button>
-                  <button class="button" onclick="reset()">
-                      Reset
-                  </button>
-              </div><br>
-              <div id="right-col">
-                  <button class="button" onclick="increment()">
-                      Increment 1 generation
-                  </button>
-                  <button class="button" onclick="twenty_three_increments(0)">
-                      Increment 23 generations
-                  </button>
-                  <div class="dropdown">
                     <button class="button" id="dropbutton">Patterns</button>
                     <div class="dropdown-content">
-                        <button class="button" onclick="block()">Block</button>
-                        <button class="button" onclick="pulsar()">Pulsar</button>
-                        <button class="button" onclick="toad()">Toad</button>
-                        <button class="button" onclick="glider()">Glider</button>
+
+                        
+                        <div class="dropdown2">
+                            <button class="button" id="still">Still life</button>
+                            <div class="dropdown-content-still">
+                                <button class="smallbutton" onclick="block()">The Block</button>
+                                <button class="smallbutton" onclick="boat()">The Boat</button>
+                                <button class="smallbutton" onclick="loaf()">The Loaf</button>
+                                <button class="smallbutton" onclick="beehive()">The Beehive</button>
+                            </div>
+                        </div>
+
+                        <div class="dropdown3">
+                            <button class="button" id="osc">Oscillators</button>
+                            <div class="dropdown-content-osc">
+                                <button class="smallbutton" onclick="blinker()">The Blinker</button>
+                                <button class="smallbutton" onclick="beacon()">The Beacon</button>
+                                <button class="smallbutton" onclick="toad()">The Toad</button>
+                                <button class="smallbutton" onclick="pulsar()">The Pulsar</button>
+                            </div>
+                        </div>
+
+                        <div class="dropdown4">
+                            <button class="button" id="ship">Glider/Ships</button>
+                            <div class="dropdown-content-ship">
+                                <button class="smallbutton" onclick="glider()">The Glider</button>
+                                <button class="smallbutton" onclick="spaceship()">The Ship</button>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
