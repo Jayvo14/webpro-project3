@@ -291,7 +291,7 @@ function block(){
 function pulsar(){
     reset();
     resetArray();
-    //currBoard[down][left]=1;
+    
     currBoard[34][38]=1;
     currBoard[34][39]=1;
     currBoard[35][38]=1;
@@ -383,5 +383,77 @@ function glider(){
     currBoard[37][39]=1;
     currBoard[36][39]=1;
     currBoard[35][38]=1;
+    updateBoard();
+}
+
+function beacon(){
+    reset();
+    resetArray();
+    //currBoard[down][left]=1;
+    currBoard[38][39]=1;
+    currBoard[39][39]=1;
+    currBoard[39][38]=1;
+    currBoard[36][37]=1;
+    currBoard[36][36]=1;
+    currBoard[37][36]=1;
+    updateBoard();
+}
+
+function spaceship(){
+    resetArray();
+    reset();
+
+    currBoard[37][37]=1;
+    currBoard[39][37]=1;
+    currBoard[40][38]=1;
+    currBoard[40][39]=1;
+    currBoard[40][40]=1;
+    currBoard[40][41]=1;
+    currBoard[39][41]=1;
+    currBoard[38][41]=1;
+    currBoard[37][40]=1;
+    updateBoard();
+}
+
+function beehive(){
+    reset();
+    resetArray();
+    currBoard[38][37]=1;
+    currBoard[38][38]=1;
+    currBoard[37][39]=1;
+    currBoard[36][38]=1;
+    currBoard[36][37]=1;
+    currBoard[37][36]=1;
+    updateBoard();
+
+}
+function blinker(){
+    reset();
+    resetArray;
+    currBoard[37][37]=1;
+    currBoard[37][38]=1;
+    currBoard[37][39]=1;
+    updateBoard();
+}
+function loaf(){
+    reset();
+    resetArray();
+    currBoard[37][36]=1;
+    currBoard[38][37]=1;
+    currBoard[39][38]=1;
+    currBoard[38][39]=1;
+    currBoard[37][39]=1;
+    currBoard[36][38]=1;
+    currBoard[36][37]=1;
+    updateBoard();
+}
+function boat(){
+    reset();
+    resetArray();
+    currBoard[36][36]=1;
+    currBoard[36][37]=1;
+    currBoard[37][38]=1;
+    currBoard[38][37]=1;
+    currBoard[37][36]=1;
     updateBoard();
 }
