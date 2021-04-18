@@ -27,7 +27,8 @@
 
           <div id="buttonRow">
 
-              <img src="resources/circle.gif" alt="circle" id="gif">
+            <img src="resources/circle.gif" alt="circle" id="gif">
+            <h4 id="generation">Generation 0</h4>
 
             <div id="left-col">
                 <button class="button" onclick="startLoop()">
@@ -56,28 +57,28 @@
                         <div class="dropdown2">
                             <button class="button" id="still">Still life</button>
                             <div class="dropdown-content-still">
-                                <button class="smallbutton">The Block</button>
-                                <button class="smallbutton">The Boat</button>
-                                <button class="smallbutton">The Loaf</button>
-                                <button class="smallbutton">The Beehive</button>
+                                <button class="smallbutton" onclick="block()">The Block</button>
+                                <button class="smallbutton" onclick="boat()">The Boat</button>
+                                <button class="smallbutton" onclick="loaf()">The Loaf</button>
+                                <button class="smallbutton" onclick="beehive()">The Beehive</button>
                             </div>
                         </div>
 
                         <div class="dropdown3">
                             <button class="button" id="osc">Oscillators</button>
                             <div class="dropdown-content-osc">
-                                <button class="smallbutton">The Blicker</button>
-                                <button class="smallbutton">The Beacon</button>
-                                <button class="smallbutton">The Toad</button>
-                                <button class="smallbutton">The Pulsar</button>
+                                <button class="smallbutton" onclick="blinker()">The Blinker</button>
+                                <button class="smallbutton" onclick="beacon()">The Beacon</button>
+                                <button class="smallbutton" onclick="toad()">The Toad</button>
+                                <button class="smallbutton" onclick="pulsar()">The Pulsar</button>
                             </div>
                         </div>
 
                         <div class="dropdown4">
                             <button class="button" id="ship">Glider/Ships</button>
                             <div class="dropdown-content-ship">
-                                <button class="smallbutton">The Glider</button>
-                                <button class="smallbutton">The Ship</button>
+                                <button class="smallbutton" onclick="glider()">The Glider</button>
+                                <button class="smallbutton" onclick="spaceship()">The Ship</button>
                             </div>
                         </div>
 
