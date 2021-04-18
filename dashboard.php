@@ -49,9 +49,16 @@
                   <button class="button" onclick="twenty_three_increments(0)">
                       Increment 23 generations
                   </button>
-                  <button class="button" onclick="spaceship()">
-                      Patterns
-                  </button>
+                  <div class="dropdown">
+                    <button class="button" id="dropbutton">Patterns</button>
+                    <div class="dropdown-content">
+                        <button class="button" onclick="block()">Block</button>
+                        <button class="button" onclick="pulsar()">Pulsar</button>
+                        <button class="button" onclick="toad()">Toad</button>
+                        <button class="button" onclick="glider()">Glider</button>
+                    </div>
+
+                </div>
               </div>
               
               <div class="audio">
