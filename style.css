@@ -2,14 +2,18 @@
 body{
     text-align: center;
     font-size: xx-large;
-    background-color: #cea56f;
+    background-color: #000000;
+    color: #ffffff;
 }
 
+#title{
+    display: block;
+}
 
 /* styling for the gameBoard and gameGrid */
 #gameBoard{
-    padding: 10px;
-
+    padding: 1px;
+    background-color: #ffffff;
 }
 
 #gameGrid{
@@ -23,34 +27,58 @@ table {
     border-spacing: inherit;
 }
 tr{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 td {
     /* border: 1px solid rgb(0, 0, 0); */
     border: none;
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     cursor: crosshair;
 }
 
 /* styling for dead or active cell */
 td.inactive{
-    background-color: rgb(255, 255, 255);
-}
-td.active{
     background-color: rgb(0, 0, 0);
 }
+td.active{
+    background-color: rgb(255, 255, 255);
+}
 
-/* does the styling for the generation text block */
+/* does the styling for the button and game container and the generation text block */
+#buttonsAndGame{
+    display: inline-flex;
+}
+
+#buttonRow{
+    margin: auto 0;   
+    padding-right: 10px;
+}
+
+#gameDiv{
+    width: 75%;
+}
+
 #generation{
-    padding-top: 2%;
+    padding-top: 1%;
     margin: 0 5px;
+}
+
+
+/* does the styling for the row of buttons */
+
+#left-col{
+    display: grid;
+}
+
+#right-col{
+    display: grid;
 }
 
 
 /* Does the button styling for the site */
 .button {
-    background-color: #2b2626; 
+    background-color: #000000; 
     border-radius: 4px;
     border: none;
     color: white;
@@ -69,8 +97,8 @@ td.active{
 }
   
 .button a{
-      text-decoration: none;
-      color: white;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -79,4 +107,47 @@ td.active{
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+/* does the styling for the gifs*/
+#gif{
+    max-width: 300px;
+    height: 300px;
+}
+
+.audio{
+    opacity: .06;
+    background-color: #000000;
+}
+
+.main{
+    padding: 2% 0;
+    margin: 0 auto;
+}
+
+.main .button{
+    background-color: #4f063a; 
+}
+
+.buttons {
+    background-color: #4f063a; 
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.buttons:hover {
+    background-color: #0e0e0e;
+    color: white;
+}
+  
+.buttons a{
+    text-decoration: none;
+    color: white;
 }

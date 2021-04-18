@@ -1,9 +1,9 @@
 
 // constant values 
-const size = 50;
+const size = 75;
 let currBoard = [size], nextBoard = [size];
 let gameStarted = false;
-let timer, generationSpeed = 500, generation = 1;
+let timer, generationSpeed = 400, generation = 0;
 
 // function that sets up the board
 function setupGame(){
@@ -35,7 +35,7 @@ function createBoard(){
             cell.setAttribute('class', 'inactive');
 
             // add function to be called if you click on a cell
-            cell.addEventListener('dragenter', clickedCell );
+            cell.addEventListener('mouseover', clickedCell );
             cell.addEventListener('click', clickedCell );
 
             row.append(cell);
@@ -109,7 +109,7 @@ function reset(){
         }
     }
 
-    generation = 1;
+    generation = 0;
     changeGeneration(generation);
 
     // reset all the values in the arrays
