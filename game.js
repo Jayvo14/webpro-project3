@@ -279,6 +279,7 @@ function changeGeneration( current ){
 
 function pattern1(){
     resetArray();
+    reset();
     for( var i = 37; i < size; i++ ){
         for( var j = 37; j < size; j++ ){
             nextBoard[i][j]=1;
