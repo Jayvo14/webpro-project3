@@ -41,7 +41,7 @@
                 <button class="button" onclick="reset()">
                     Reset
                 </button>
-            </div><br> <br>
+            </div>
             <div id="right-col">
                 <button class="button" onclick="increment()">
                     Increment 1 generation
@@ -83,7 +83,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div><br><br>
 
                 </div>
               </div>
