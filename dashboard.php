@@ -16,7 +16,7 @@
     <body onload="setupGame()">
       <div class="navbar">
         <div style="margin-left: 1%; float: left">
-            <a class="button" href="home.html">Logout</a>
+            <a class="button" id="logout" href="home.html">Logout</a>
           </div>
           
       </div>

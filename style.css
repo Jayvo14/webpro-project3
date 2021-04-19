@@ -149,6 +149,8 @@ td.active{
     background-color: #4f063a; 
 }
 
+
+/* Anthonys button(s) */
 .buttons {
     background-color: #4f063a; 
     border-radius: 4px;
@@ -159,7 +161,8 @@ td.active{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;
     transition-duration: 0.4s;
 }
 .buttons:hover {
@@ -170,6 +173,10 @@ td.active{
 .buttons a{
     text-decoration: none;
     color: white;
+}
+#logout{
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
