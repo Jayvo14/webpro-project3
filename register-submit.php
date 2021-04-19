@@ -75,11 +75,13 @@
                     echo "Please try again.<br>";
                 }else{
                     $data = $_POST["fname"] . "," .$_POST["lname"] . "," .$_POST["email"] . "," .$_POST["uname"] . "," . $_POST["pword"] . "\r\n"; 
-                    echo $data . "<br><br>";
+                    
                     $saved = file_put_contents("data.html", $data, FILE_APPEND | LOCK_EX);
+                    
                     //echo $saved;
-                    echo "First Name, Last Name, Email, Username, Password <br>";
-                    echo file_get_contents("data.html") . "<br>";
+                    echo "Your First Name, Last Name, Email, Username, Password <br>";
+                    echo $data . "<br><br>";
+                    //echo file_get_contents("data.html") . "<br>";
                 }
                 echo "</pre>";
             }else{

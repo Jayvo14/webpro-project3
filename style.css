@@ -116,8 +116,11 @@ td.active{
 }
 
 .audio{
-    opacity: .06;
+    opacity: .3;
     background-color: #000000;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .main{
@@ -150,4 +153,81 @@ td.active{
 .buttons a{
     text-decoration: none;
     color: white;
+}
+
+.dropdown-content{
+    background-color: #0e0e0e;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px #433443;
+    transition: all 1.5s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown-content .button{
+    width: 300px;
+}
+
+.dropdown:hover .dropdown-content{
+    /*height: 250px;*/
+    /*display: block;*/
+    height: 250px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+#dropbutton{
+    width: 300px;
+}
+
+.smallbutton{
+    background-color: #000000; 
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.smallbutton:hover {
+    background-color: #433443;
+    color: white;
+}
+
+.dropdown2:hover .dropdown-content-still{
+    height: 100px;
+}
+
+.dropdown3:hover .dropdown-content-osc{
+    height: 100px;
+}
+
+.dropdown4:hover .dropdown-content-ship{
+    height: 50px;
+}
+
+.dropdown-content-still{
+   
+   transition: all 1.5s ease;
+   height: 0;
+   overflow: hidden;
+}
+
+.dropdown-content-osc{
+   
+   transition: all 1.5s ease;
+   height: 0;
+   overflow: hidden;
+}
+
+.dropdown-content-ship{
+    
+    transition: all 1.5s ease;
+    height: 0;
+    overflow: hidden;
 }
