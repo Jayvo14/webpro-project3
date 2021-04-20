@@ -149,6 +149,12 @@ td.active{
     background-color: #4f063a; 
 }
 
+#rules{
+    font-size: medium;
+    text-align: start;
+    margin-left: 45%;
+}
+
 
 /* Anthonys button(s) */
 .buttons {
