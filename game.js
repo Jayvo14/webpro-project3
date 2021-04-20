@@ -35,7 +35,7 @@ function createBoard(){
             cell.setAttribute('class', 'inactive');
 
             // add function to be called if you click on a cell
-            cell.addEventListener('mouseover', clickedCell );
+            cell.addEventListener('dragenter', clickedCell );
             cell.addEventListener('click', clickedCell );
 
             row.append(cell);
